@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从免费完整剧集和精选长片段中学习实用英语表达。">
+  <meta name="theme-color" content="#174c3c">
+  <title>剧有词 · 剧集学习书架</title>
+  <link rel="preconnect" href="https://i.ytimg.com">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalog-title">跳到剧集书架</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="剧有词首页">
+      <span class="brand-mark" aria-hidden="true">J</span>
+      <span><strong>剧有词</strong><small>Series English Library</small></span>
+    </a>
+    <div class="summary" aria-label="内容统计"><strong id="show-count">0</strong> 部剧 · <strong id="episode-count">0</strong> 项 · <strong id="word-count">0</strong> 个词条</div>
+  </header>
+
+  <main>
+    <section class="library-head" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">完整单集与精选片段 · 学习免费 · 视频直达</p>
+        <h1 id="page-title">从一段好剧里，留下真正会用的英语。</h1>
+      </div>
+      <div class="search-panel">
+        <label for="search">搜索剧名、集名或表达主题</label>
+        <div class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" name="q" type="search" autocomplete="off" placeholder="例如：动画、科幻、职场英语">
+          <button id="clear-search" type="button" aria-label="清空搜索" title="清空搜索" hidden>×</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" aria-labelledby="catalog-title">
+      <div class="catalog-toolbar">
+        <div>
+          <p class="eyebrow">Library</p>
+          <h2 id="catalog-title">剧集书架</h2>
+        </div>
+        <div class="catalog-controls">
+          <div class="filters" role="group" aria-label="按类型筛选">
+            <button type="button" data-filter="all" aria-pressed="true">全部</button>
+            <button type="button" data-filter="recent" aria-pressed="false">近年新作</button>
+            <button type="button" data-filter="comedy" aria-pressed="false">喜剧</button>
+            <button type="button" data-filter="animation" aria-pressed="false">动画</button>
+            <button type="button" data-filter="scifi" aria-pressed="false">科幻</button>
+            <button type="button" data-filter="crime" aria-pressed="false">犯罪剧情</button>
+            <button type="button" data-filter="literary" aria-pressed="false">文学改编</button>
+          </div>
+          <label class="sort-control" for="sort">排序
+            <select id="sort" name="sort">
+              <option value="featured">推荐</option>
+              <option value="newest">最新优先</option>
+              <option value="words">词条最多</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <p id="result-count" class="result-count" role="status" aria-live="polite"></p>
+      <div id="series-grid" class="series-grid"></div>
+      <div id="empty-state" class="empty-state" hidden>
+        <strong>没有找到匹配的剧集</strong>
+        <p>换个剧名、集名或主题试试。</p>
+        <button id="reset-search" type="button">清除筛选</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>学习页完全免费并可离线使用。观看入口链接免费完整集、长合集或精选片段，并在卡片上明确标注来源类型。</p>
+  </footer>
+  <script src="assets/app.js"></script>
+</body>
+</html>

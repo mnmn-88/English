@@ -1,0 +1,74 @@
+.sentence {
+  cursor: text;
+}
+
+.sentence::selection,
+.sentence *::selection {
+  background: #f1cc82;
+  color: #193e33;
+}
+
+.selection-popover {
+  position: fixed;
+  z-index: 1000;
+  width: min(300px, calc(100vw - 24px));
+  padding: 14px;
+  border: 1px solid #cad5cb;
+  border-radius: 8px;
+  background: #fff;
+  color: #213e39;
+  box-shadow: 0 16px 38px rgba(31, 57, 50, 0.2);
+}
+
+.selection-popover__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.selection-popover__term {
+  font: 650 18px/1.35 Georgia, serif;
+  overflow-wrap: anywhere;
+}
+
+.selection-popover__close {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.selection-popover__meaning {
+  min-height: 26px;
+  margin: 8px 0 12px;
+  color: #4f625c;
+  overflow-wrap: anywhere;
+}
+
+.selection-popover__add {
+  width: 100%;
+}
+
+.custom-word-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.custom-word-remove {
+  padding: 5px 9px;
+  color: #855220;
+  font-size: 12px;
+}
+
+@media (max-width: 620px) {
+  .selection-popover {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,16 @@
+# Dependencies and generated media
+node_modules/
+promo-video/out/
+promo-video/public/captures/
+promo-video/qa/
+
+# Local tooling
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Local servers and caches
+__pycache__/
+.cache/
